@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 17</title>
+</head>
+
+<body>
+
+
+    <!-- <div id="parent">www
+        <div id="child">
+            <span id=”inner-message”>Hi..</span>
+        </div>
+    </div> -->
+
+    <script>
+        // var parent = document.getElementById("parent");
+        // parent.style.border = "solid red"
+        // var child = document.getElementById("child");
+       
+        var parent = document.createElement('div');
+        parent.id = 'parent';
+        parent.style.border = "solid red"
+        document.body.appendChild(parent);
+        var child = document.createElement('div');
+        child.id = 'child';
+        child.style.border="1px solid blue"
+        child.style.backgroundColor="green"
+        document.getElementById("parent").appendChild(child);
+        var span = document.createElement('span');
+        span.id = 'inner-message';
+        span.innerHTML="Hi.."
+        document.getElementById("child").appendChild(span);
+
+
+    </script>
+</body>
+
+</html>

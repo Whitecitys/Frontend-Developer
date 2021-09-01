@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS 5</title>
+</head>
+
+<body>
+    <label for="number">Choose Number:</label>
+    <select name="number" id="number" onchange="changeNumber(this)">
+      <option value="One">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+      <option value="Four">Four</option>
+    </select>
+
+    <p>Number : <span id="value"></span> </p>
+
+    <script>
+        function changeNumber(e){
+            document.getElementById("value").innerHTML = e.value;
+        }
+
+    </script>
+</body>
+
+</html>

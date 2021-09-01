@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 16</title>
+    <style>
+        #red-box {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation: infinite;
+            animation-duration: 9.5s;
+            animation-name: movecircle;
+           
+        }
+
+        @keyframes movecircle {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+            21.05% {
+                left: 150px;
+                top: 0px;
+            }
+            31.57%{
+                left: 150px;
+                top: 0px;
+            }
+            42.09%{
+                left: 150px;
+                top: 200px;
+            }
+            47.35%{
+                left: 150px;
+                top: 200px;
+            }
+            100%{
+                left: 100px;
+                top: 200px;
+            }
+           
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div id="red-box">
+
+    </div>
+
+  <script>
+         var box = document.getElementById("red-box");
+        
+    </script>
+</body>
+
+</html>

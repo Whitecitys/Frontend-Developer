@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 5</title>
+    <style>
+        #blue-circle {
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            border-radius: 50%;
+            animation-name: movecircle;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes movecircle {
+            0% {
+                background-color: lightblue;
+                left: -100px;
+                top: 0px;
+            }
+
+            100% {
+                background-color: lightblue;
+                left: 100%;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div id="blue-circle">
+
+    </div>
+
+
+</body>
+
+</html>

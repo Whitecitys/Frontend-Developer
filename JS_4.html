@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS 4</title>
+</head>
+
+<body>
+  <h1>Checkbox</h1>
+  <label class="container">One
+    <input id="oneCheckbox" type="checkbox" name="One" onclick="showValue1(this)" />
+    <span class="checkmark"></span>
+  </label>
+
+
+  <label class="container">Two
+    <input id="oneCheckbox" type="checkbox" name="Two" onclick="showValue2(this)" />
+    <span class="checkmark"></span>
+  </label>
+
+  <p>Value 1 : <span id="value1"></span> </p>
+  <p>Value 2 : <span id="value2"></span> </p>
+
+  <h1>Radio</h1>
+
+  <input type="radio" name="value" value="One" onchange="showValue(this)">
+    <label for="html">One</label><br>
+  <input type="radio" name="value" value="Two" onchange="showValue(this)">
+    <label for="css">Two</label><br>
+  <input type="radio" name="value" value="Three" onchange="showValue(this)">
+    <label for="javascript">Three</label>
+
+  <p>Value : <span id="value"></span> </p>
+
+
+  <script>
+    var value1 = "one";
+    function showValue1(e) {
+      if (e.checked == true) {
+        document.getElementById("value1").innerText = e.name;
+      } else {
+        document.getElementById("value1").innerText = "";
+      }
+    }
+    function showValue2(e) {
+      if (e.checked == true) {
+        document.getElementById("value2").innerText = e.name;
+      } else {
+        document.getElementById("value2").innerText = "";
+      }
+    }
+  </script>
+
+  <script>
+    function showValue(e) {
+      document.getElementById("value").innerText = e.value;
+    }
+  </script>
+
+
+
+</body>
+
+</html>
